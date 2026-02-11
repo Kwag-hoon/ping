@@ -6,7 +6,7 @@ import Select from "../auth/Select";
 function MyProfile() {
   const navigate = useNavigate();
 
-  const API_BASE = "http://localhost:9070";
+  const API_BASE = "https://port-0-ping-back-mlgc1jxybf154d1e.sel3.cloudtype.app";
 
   // ======================
   // form state

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import IconMessage from "../../assets/icon-message.svg";
 import { getMyFeedback } from "../../api/MyPage_Api";
 
-const API_BASE = "http://localhost:9070";
+const API_BASE = "https://port-0-ping-back-mlgc1jxybf154d1e.sel3.cloudtype.app";
 
 const formatDate = (datetime) => {
   if (!datetime) return "";

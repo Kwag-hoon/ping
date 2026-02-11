@@ -84,7 +84,7 @@ function Signup() {
       };
 
       const res = await axios.post(
-        "http://localhost:9070/api/auth/signup",
+        "https://port-0-ping-back-mlgc1jxybf154d1e.sel3.cloudtype.app/api/auth/signup",
         payload
       );
 

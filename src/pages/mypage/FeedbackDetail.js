@@ -5,13 +5,13 @@ import IconMessage from "../../assets/icon-message.svg";
 import { getMyFeedbackDetail, updateMyFeedback, deleteMyFeedback } from "../../api/MyPage_Api";
 import "../styles/feedbackDetail.scss";
 
-const API_BASE = "http://localhost:9070";
+const API_BASE = "https://port-0-ping-back-mlgc1jxybf154d1e.sel3.cloudtype.app";
 
 const formatDate = (datetime) => {
   if (!datetime) return "";
   const d = new Date(datetime);
   if (Number.isNaN(d.getTime())) return String(datetime);
-  return `${d.getFullYear()}.${d.getMonth() + 1}.${d.getDate()} ${String(d.getHours()).padStart(2,"0")}:${String(d.getMinutes()).padStart(2,"0")}`;
+  return `${d.getFullYear()}.${d.getMonth() + 1}.${d.getDate()} ${String(d.getHours()).padStart(2, "0")}:${String(d.getMinutes()).padStart(2, "0")}`;
 };
 
 export default function FeedbackDetail() {

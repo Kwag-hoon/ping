@@ -11,11 +11,11 @@ function Login(props) {
 
   // 입력한 값을 담기 위한 form 선언
   const [form, setForm] = useState({
-    user_id:'',
+    user_id: '',
     user_pw: '',
   });
 
-  const handleChange =(e)=>{
+  const handleChange = (e) => {
     setForm({
       ...form,
       [e.target.name]: e.target.value,
@@ -27,7 +27,7 @@ function Login(props) {
 
     try {
       const res = await axios.post(
-        'http://localhost:9070/api/auth/login',
+        'https://port-0-ping-back-mlgc1jxybf154d1e.sel3.cloudtype.app/api/auth/login',
         form
       );
 
@@ -49,8 +49,8 @@ function Login(props) {
 
           <ul className="social-login">
             <li><Link to="/auth/naver"><img src={process.env.PUBLIC_URL + '/images/naver.jpg'} alt="네이버" /></Link></li>
-            <li><Link to="/auth/kakao"><img src={process.env.PUBLIC_URL + '/images/kakao.jpg'} alt="카카오"/></Link></li>
-            <li><Link to="/auth/google"><img src={process.env.PUBLIC_URL + '/images/google.jpg'} alt="구글"/></Link></li>
+            <li><Link to="/auth/kakao"><img src={process.env.PUBLIC_URL + '/images/kakao.jpg'} alt="카카오" /></Link></li>
+            <li><Link to="/auth/google"><img src={process.env.PUBLIC_URL + '/images/google.jpg'} alt="구글" /></Link></li>
           </ul>
 
           <form className='login_form' onSubmit={handleSubmit}>
@@ -82,8 +82,8 @@ function Login(props) {
                   onTouchEnd={() => setShow(false)}
                 >
                   <img
-        src={eye} alt="eye" className="eye"
-      />
+                    src={eye} alt="eye" className="eye"
+                  />
                 </button>
               </div>
             </div>

@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const Api = axios.create({
-  baseURL: "http://localhost:9070",
+  baseURL: "https://port-0-ping-back-mlgc1jxybf154d1e.sel3.cloudtype.app",
   timeout: 15000,
 });
 
